@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Bungee+Inline&display=swap"
+      rel="stylesheet"
+    />
+    <title>Modelo TCP/IP</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <h1>Modelo TCP/IP</h1>
+      <div class="relleno"></div>
+    </div>
+
+    <div class="prueba">
+      <div class="que_es" id="que_es"></div>
+      <nav>
+        <ul class="navigation">
+          <li>
+            <a href="#home" title="Home">
+              Indice
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="chevron"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="white"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M9 6l6 6l-6 6"></path>
+              </svg>
+            </a>
+            <div class="subnavigation__wrapper">
+              <ul>
+                <li><a href="#que_es" title="Que es">Que es</a></li>
+                <li>
+                  <a href="#funcionalidad" title="Funcionalidad"
+                    >Funcionalidad</a
+                  >
+                </li>
+                <li>
+                  <a href="#como_se_relacionan" title="Como se relacionan"
+                    >Como se relacionan</a
+                  >
+                </li>
+                <li><a href="#capas" title="Capas">Capas</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="contenedor">
+        <section id="about">
+          <div class="container">
+            <div class="container_1">
+              <h1>¿Que es el MODELO TCP/IP?</h1>
+              <p>
+                El modelo TCP/IP fue desarrollado por el Departamento de Defensa
+                de los Estados Unidos para permitir la transmisión precisa y
+                correcta de datos entre dispositivos. Divide los mensajes en
+                paquetes para evitar tener que volver a enviar el mensaje
+                completo en caso de que encuentre un problema durante la
+                transmisión. Los paquetes se vuelven a armar una vez que llegan
+                a su destino.
+              </p>
+              <p>
+                Cada paquete puede tomar una ruta diferente entre la computadora
+                de origen y la de destino en función de si la ruta original
+                utilizada está congestionada o no disponible.
+              </p>
+              <p>
+                El TCP/IP divide las tareas de comunicación en capas que
+                mantienen el proceso estandarizado, sin que los proveedores de
+                hardware y software tengan que tratar de gestionarlo ellos
+                mismos. Los paquetes de datos deben pasar a través de cuatro
+                capas antes de que el dispositivo de destino los reciba; luego
+                el TCP/IP atraviesa las capas en orden inverso para volver a
+                poner el mensaje en su formato original.
+              </p>
+            </div>
+            <div class="funcionalidad" id="funcionalidad"></div>
+            <div class="container_2">
+              <div class="card-ft">
+                <div class="header-ft">
+                  <div class="top">
+                    <div class="circle"><span class="red circle2"></span></div>
+                    <div class="circle">
+                      <span class="yellow circle2"></span>
+                    </div>
+                    <div class="circle">
+                      <span class="green circle2"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-container">
+                  <img
+                    src="https://pandorafms.com/blog/wp-content/uploads/2023/03/tcpip-pfms-blog-980x549.png"
+                    alt="Imagen del modelo TCP/IP"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="services">
+          <div class="container">
+            <div class="container_3">
+              <div class="card-ft">
+                <div class="header-ft">
+                  <div class="top">
+                    <div class="circle"><span class="red circle2"></span></div>
+                    <div class="circle">
+                      <span class="yellow circle2"></span>
+                    </div>
+                    <div class="circle">
+                      <span class="green circle2"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-container">
+                  <img
+                    src="https://static.platzi.com/media/user_upload/Captura%20de%20Pantalla%202022-01-26%20a%20la(s)%205.30.22%20p.m.-8d0a2556-7853-45b8-b910-7cc4aa4ab30f.jpg"
+                    alt="Imagen del modelo TCP/IP"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="como_se_relacionan" id="como_se_relacionan"></div>
+            <div class="container_4">
+              <h2>¿Cuál es su funcionalidad?</h2>
+              <p>
+                Como protocolo orientado a la conexión, el TCP establece y
+                mantiene una conexión entre aplicaciones o dispositivos hasta
+                que terminan de intercambiar datos.
+              </p>
+              <p>
+                Determina cómo el mensaje original debe dividirse en paquetes,
+                numera y reensambla los paquetes, y los envía a otros
+                dispositivos de la red tales como enrutadores, puertas de enlace
+                de seguridad y conmutadores; y luego hacia su destino. El TCP
+                también envía y recibe paquetes desde la capa de red, maneja la
+                transmisión de cualquier paquete perdido, administra el control
+                de flujo y garantiza que todos los paquetes lleguen a su
+                destino.
+              </p>
+              <p>
+                El TCP/IP utiliza un protocolo de enlace de tres vías para
+                establecer una conexión entre un dispositivo y un servidor, lo
+                que garantiza que se puedan transferir múltiples conexiones de
+                socket TCP en ambas direcciones simultáneamente. Tanto el
+                dispositivo como el servidor deben sincronizar y aceptar los
+                paquetes antes de que comience la comunicación, y así entonces
+                pueden negociar, separar y transferir las conexiones de socket
+                TCP.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="about">
+          <div class="container">
+            <div class="container_1">
+              <h1>¿Cómo se relacionan sus estas capas?</h1>
+              <p>
+                Cada capa del modelo TCP/IP interactúa con las capas adyacentes
+                de manera jerárquica: La capa de aplicación genera datos que son
+                empaquetados por la capa de transporte.
+                <br> La capa de transporte
+                segmenta los datos y agrega información de control para
+                garantizar la entrega fiable, luego pasa estos segmentos a la
+                capa de Internet.
+                <br> La capa de Internet encapsula los segmentos en
+                datagramas o paquetes IP y los enruta a través de la red hacia
+                el destino. 
+                <br> La capa de acceso a la red se encarga de la
+                transmisión física de los datos a través de la red, utilizando
+                las direcciones físicas de los dispositivos y los medios de
+                transmisión apropiados.
+                <br> Este diseño modular permite que cada
+                capa del modelo TCP/IP funcione de manera independiente y se
+                comunique con las capas superior e inferior, asegurando una
+                transmisión de datos eficiente y organizada en las redes
+                modernas.
+              </p>
+            </div>
+            <div class="funcionalidad" id="funcionalidad"></div>
+            <div class="container_2">
+              <div class="card-ft">
+                <div class="header-ft">
+                  <div class="top">
+                    <div class="circle"><span class="red circle2"></span></div>
+                    <div class="circle">
+                      <span class="yellow circle2"></span>
+                    </div>
+                    <div class="circle">
+                      <span class="green circle2"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="code-container">
+                  <img
+                    src="https://signal.avg.com/hs-fs/hubfs/Blog_Content/Avg/Signal/AVG%20Signal%20Images/What%20is%20TCPIP%20(Signal)/TCP-IP.png?width=660&name=TCP-IP.png"
+                    alt="Imagen del modelo TCP/IP"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="todo" id="capas">
+          <div class="modulos">
+            <h2>Las 4 capas del modelo TCP/IP</h2>
+          </div>
+          <div class="anidado">
+            <div class="card-container">
+              <div class="card">
+                <div class="front-content">
+                  <p>Capa de enlace de datos</p>
+                </div>
+                <div class="content">
+                  <p class="heading">CED</p>
+                  <p>
+                    La capa de acceso a la red, también conocida como la capa de
+                    enlace a los datos, gestiona la infraestructura física que
+                    permite a los ordenadores comunicarse entre sí por Internet.
+                    Esto abarca, entre otros elementos, cables Ethernet, redes
+                    inalámbricas, tarjetas de interfaz de red y controladores de
+                    dispositivos en el ordenador.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-container">
+              <div class="card">
+                <div class="front-content">
+                  <p>Capa de Internet</p>
+                </div>
+                <div class="content">
+                  <p class="heading">IP</p>
+                  <p>
+                    La capa de Internet
+            controla el flujo y el enrutamiento de tráfico para
+                    garantizar que los datos se envían de forma rápida y
+                    correcta. Esta capa también es responsable de volver a
+                    juntar el paquete de datos en el destino. Si hay mucho
+                    tráfico en Internet, esta capa puede tardar un poco más en
+                    enviar un archivo, pero es menos probable que el archivo se
+                    dañe.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-container">
+              <div class="card">
+                <div class="front-content">
+                  <p>Capa de transporte</p>
+                </div>
+                <div class="content">
+                  <p class="heading">TCP</p>
+                  <p>
+                    La capa de transporte es la que proporciona una conexión de
+                    datos fiable entre dos dispositivos de comunicación. Es como
+                    enviar un paquete asegurado: la capa de transporte divide
+                    los datos en paquetes, confirma los paquetes que ha recibido
+                    del remitente y se asegura de que el destinatario confirme
+                    los paquetes recibidos por su parte.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-container">
+              <div class="card">
+                <div class="front-content">
+                  <p>Capa de aplicación</p>
+                </div>
+                <div class="content">
+                  <p class="heading">CAP</p>
+                  <p>
+                    La capa de aplicaciones es el grupo de aplicaciones que
+                    permite al usuario acceder a la red. Para la mayoría de
+                    nosotros, esto significa el correo electrónico, las
+                    aplicaciones de mensajería y los programas de almacenamiento
+                    en la nube. Esto es lo que el usuario final ve y con lo que
+                    interactúa al recibir y enviar datos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
